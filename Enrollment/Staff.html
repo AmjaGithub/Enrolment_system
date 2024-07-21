@@ -1,0 +1,76 @@
+ <!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="staff.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>our Staff</title>
+</head>
+
+<body>
+
+    <section class="bg-purple-100 rounded-2xl p-5">
+        <div class="container mx-auto">   
+            <div class="flex">
+                <a href="new.html" class="text-2xl font-bold pr-5 border-r border-purple-300 mr-5 ">Enrollment</a>
+                <div class="my-auto">
+                    <u class="flex border font-bold text-gray-600 list-none decoration-0">
+                        <li class="pr-5"><a href="index.html"  class="px-3 py-2 border border-purple-100 hover:border-purple-300 rounded ">Home</a></li>
+                <li class="pr-5"><a href="Adminlogin.html" class="px-3 py-2 border border-purple-100 hover:border-purple-300 rounded ">Admin</a></li>
+                <li class="pr-5"><a href="studentLogin.html"  class="px-3 py-2 border border-purple-100 hover:border-purple-300 rounded ">Student</a></li>
+                <li class="pr-5"><a href="About.php"  class="px-3 py-2 border border-purple-100 hover:border-purple-300 rounded ">About</a></li>
+                        
+                    </u>
+                </div>
+                <a href="studentLogin.html" class="text-medium bg-red-500 text-white px-3 py-2 rounded font-bold ml-auto">Student Login</a>
+            </div>
+        </div>
+
+    </section>
+    <section class="bg-sky-100 rounded-2xl p-10 mt-5 ">
+    <h1 class="heading"> Our Staff</h1>
+    <div class="image-container">
+    <div class="image" onclick="fetch_info(0)"><img src="1img.jpg"></div>
+    <div class="image" onclick="fetch_info(1)"><img src="2img.jpg"></div>
+    <div class="image" onclick="fetch_info(2)"><img src="nowfeek.jpg"></div>
+    <div class="image" onclick="fetch_info(3)"><img src="4img.jpg"></div>
+    <div class="image" onclick="fetch_info(4)"><img src="5img.jpg"></div>
+    </div>
+
+    <div class="info-container">
+        <img class="profile" id="profile " src="nowfeek.jpg">
+        <div class="info">
+            <h1 class="name" id="name">M.R.M.NOWFEEK</h1><br>
+            <h3 class="status" id="status">DEMONSTRATE</h3>
+            <P class="about" id="about">Sri Lanka Institute of Advanced Technological Education SLIATE ·
+             Department of Information Technology MSc in IT MCS(SL),MSc in IT, PGD in IT,BSc in IT, BSc in MIT, HNDE<br>
+            Emaill:nowfeekmscinit@gmail.com<br>
+            Phone No:075 283 0484
+            </P>
+        </div>        
+    </div>
+    <script>
+        function fetch_info(){
+            let profile=["1img.jpg","2img.jpg","nowfeek.jpg","4img.jpg ","5img.jpg"];
+            let name=["S.L.MUSTHAFA"," Dr. Aiman A","M.R.M.NOWFEEK","A.M.M. THARIK","M.A.Arzath Areeff"];
+            let status=["DIRECTOR"," THE HEAD, DEPARTMENT OF INFORMATION ADVANCED TECHNOLOGICAL INSTITUTE,SAMMANTHURAI.","DEMONSTRATE","DEMONSTRATE","LECTURER"];  
+
+            document.getElementById("profile").src=profile[i];
+            document.getElementById("name").innerHTML=name[i];
+            document.getElementById("status").innerHTML=status[i];
+            document.getElementById("profile").innerHTML=name[i]+
+            "Sri Lanka Institute of Advanced Technological Education. "
+            "Emaill:atisamanthurai@sliate.ac.lk"
+            " Phone No:0672 261 304";
+            
+        }  
+      
+       
+      
+
+    </script>
+    </section>
+</body>
+</html>
